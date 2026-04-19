@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="gameArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="28.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Quit" />
+                  <MenuItem mnemonicParsing="false" text="Pause" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Canvas fx:id="gameCanvas" height="600.0" width="600.0" />
+      <Label fx:id="lifeLabel" layoutY="28.0" prefHeight="30.0" prefWidth="25.0" text="HP" />
+      <Label fx:id="scoreLabel" layoutX="484.0" layoutY="28.0" prefHeight="30.0" prefWidth="116.0" text="SCROE: 0" />
+      <ImageView fx:id="heart1" fitHeight="25.0" fitWidth="25.0" layoutX="25.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart2" fitHeight="25.0" fitWidth="25.0" layoutX="55.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart3" fitHeight="25.0" fitWidth="25.0" layoutX="85.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="125.0" layoutX="240.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@plane2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
